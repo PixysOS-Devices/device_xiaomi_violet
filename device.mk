@@ -147,9 +147,20 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	Crimson
 
+<<<<<<< HEAD
 
 
 # Codec2 modules
+=======
+#Crimson
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp-permissions-crimson.xml:system/product/etc/permissions/privapp-permissions-crimson$
+
+PRODUCT_PACKAGES += \
+    Crimson
+
+# Context Hub
+>>>>>>> 38b4181... violet: Add Crimson kernel OTA app
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
     libsfplugin_ccodec

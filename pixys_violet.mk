@@ -13,11 +13,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-
 # Setting bootanim
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_BOOT_ANIMATION_RES := 1080
+BUILD_WITH_GAPPS := true
 
 
 # Inherit some common rom specific stuff.
