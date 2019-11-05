@@ -135,6 +135,13 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service_64 \
     vendor.qti.hardware.camera.device@1.0.vendor
 
+#Google Camera
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp-permissions-gcam.xml:system/product/etc/permissions/privapp-permissions-gcam.xml
+
+PRODUCT_PACKAGES += \
+    GoogleCamera
+
 # Context Hub
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.generic \
