@@ -127,9 +127,9 @@ TARGET_QCOM_MEDIA_VARIANT := caf-sm8150
 TARGET_QCOM_DISPLAY_VARIANT := caf-sm8150
 #
 PRODUCT_SOONG_NAMESPACES += \ 
-hardware/qcom/display-$(TARGET_QCOM_DISPLAY_VARIANT) \ 
-hardware/qcom/audio-$(TARGET_QCOM_AUDIO_VARIANT) \ 
-hardware/qcom/media-$(TARGET_QCOM_MEDIA_VARIANT)
+	hardware/qcom/display-$(TARGET_QCOM_DISPLAY_VARIANT) \ 
+	hardware/qcom/audio-$(TARGET_QCOM_AUDIO_VARIANT) \ 
+	hardware/qcom/media-$(TARGET_QCOM_MEDIA_VARIANT)
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
