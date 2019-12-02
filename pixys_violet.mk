@@ -17,7 +17,7 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_BOOT_ANIMATION_RES := 1080
-BUILD_WITH_GAPPS := true
+#BUILD_WITH_GAPPS := true
 
 
 # Inherit some common rom specific stuff.
