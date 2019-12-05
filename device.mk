@@ -150,10 +150,13 @@ PRODUCT_PACKAGES += \
 #Crimson
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-crimson.xml:system/product/etc/permissions/privapp-permissions-crimson$
-
 PRODUCT_PACKAGES += \
     Crimson
 
+# Codec2 modules
+PRODUCT_PACKAGES += \
+	com.android.media.swcodec \
+	libsfplugin_ccodec
 
 # CNE
 PRODUCT_PACKAGES += \
