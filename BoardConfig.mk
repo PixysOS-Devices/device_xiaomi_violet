@@ -30,6 +30,9 @@ BUILD_BROKEN_DUP_RULES := true
 MSMSTEPPE := sm6150
 TARGET_SEPOLICY_DIR := msmsteppe
 
+# Allow Broken targets to be build
+BUILD_BROKEN_PHONY_TARGETS := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := violet
 
