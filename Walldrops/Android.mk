@@ -2,7 +2,6 @@ CAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := WallDrops
-LOCAL_OVERRIDES_PACKAGES := WallDrops
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := walldrop.apk
 LOCAL_CERTIFICATE := PRESIGNED
