@@ -36,3 +36,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="violet"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Force triple frame buffers
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
