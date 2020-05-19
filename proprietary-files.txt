@@ -619,7 +619,7 @@ vendor/lib/vendor.qti.esepowermanager@1.0.so|730827ea12433a6de18d32f54041a74531c
 vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|b9a03bfc607fb74462346eecacf27a7afda8d114
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|0dc949a16129a9d3d06429723641b6fba11ee1d2
 
-# Fingerprint sensor
+# Fingerprint sensor - from violet-user 10 QKQ1.190915.002 20.4.27 release-keys
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
