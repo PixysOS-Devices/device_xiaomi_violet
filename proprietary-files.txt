@@ -938,8 +938,10 @@ vendor/lib64/libmlipay.so|8510d27c292ca9077704724564b635978c0992b9
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|43cae59576c8570a37bbf9d4a059b5e9c207360d
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|521357ee808c1a248db9e76269880b1f9d0a0617
 
-# Perf
+# IRQbalance - flame-user 10 QQ3A.200605.001 6392402 release-keys
 vendor/bin/msm_irqbalance
+
+# Perf - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 vendor/lib/libqti-perfd-client.so
 vendor/lib/vendor.qti.hardware.perf@2.0.so
 vendor/lib64/libqti-perfd-client.so
