@@ -129,11 +129,10 @@ vendor/lib/libbluetooth_audio_session_qti.so|0bd178da637471b31f991a4e0d8894223a6
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|37bc226f0aa9793a6beca1cabdde40030a7637f9
 vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|52855c14cca9af580f2006304a5fb69ffd35e9ac
 
-# Camera
+# Camera - from violet-user 10 QKQ1.190915.002 V11.0.1.0.QFHCNXM release-keys
 vendor/etc/camera/beauty_ui9_intelligent_params.config
 vendor/etc/camera/eyelineblush.cng
 vendor/etc/camera/lf_facerank_model.bin
-vendor/etc/camera/megviifacepp_0_5_2_model
 vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
 vendor/etc/camera/vidhance_calibration_F7B
 vendor/firmware/CAMERA_ICP.elf
@@ -155,6 +154,7 @@ vendor/lib/camera/com.qti.sensormodule.ofilm_ov13855.bin
 vendor/lib/camera/com.qti.sensormodule.ofilm_ov13880.bin
 vendor/lib/camera/com.qti.sensormodule.ofilm_s5k5e8.bin
 vendor/lib/camera/com.qti.sensormodule.pmd_irs1645.bin
+vendor/lib/camera/com.qti.sensormodule.pmd_irs2381c.bin
 vendor/lib/camera/com.qti.sensormodule.semco_imx258.bin
 vendor/lib/camera/com.qti.sensormodule.semco_imx386.bin
 vendor/lib/camera/com.qti.sensormodule.semco_imx586.bin
@@ -166,7 +166,6 @@ vendor/lib/camera/com.qti.sensormodule.sunny_imx586.bin
 vendor/lib/camera/com.qti.sensormodule.sunny_ov13855.bin
 vendor/lib/camera/com.qti.sensormodule.sunny_ov2281.bin
 vendor/lib/camera/com.qti.sensormodule.sunny_s5k2l7.bin
-vendor/lib/camera/com.qti.sensormodule.sunny_s5k2x5sp.bin
 vendor/lib/camera/com.qti.sensormodule.sunny_s5k5e8.bin
 vendor/lib/camera/com.qti.sensormodule.sunny_s5k5e9yu05.bin
 vendor/lib/camera/com.qti.sensormodule.truly_imx476.bin
@@ -194,14 +193,15 @@ vendor/lib/camera/com.qti.tuned.semco_imx258_mono.bin
 vendor/lib/camera/com.qti.tuned.semco_imx386.bin
 vendor/lib/camera/com.qti.tuned.semco_imx481.bin
 vendor/lib/camera/com.qti.tuned.semco_imx586.bin
+vendor/lib/camera/com.qti.tuned.semco_s5k3m5.bin
 vendor/lib/camera/com.qti.tuned.semco_s5k5e8.bin
+vendor/lib/camera/com.qti.tuned.sony_imx334.bin
 vendor/lib/camera/com.qti.tuned.sunny_imx519.bin
 vendor/lib/camera/com.qti.tuned.sunny_imx586.bin
 vendor/lib/camera/com.qti.tuned.sunny_imx586_cn.bin
 vendor/lib/camera/com.qti.tuned.sunny_ov13855.bin
 vendor/lib/camera/com.qti.tuned.sunny_ov13855_cn.bin
 vendor/lib/camera/com.qti.tuned.sunny_s5k2l7.bin
-vendor/lib/camera/com.qti.tuned.sunny_s5k2x5sp.bin
 vendor/lib/camera/com.qti.tuned.sunny_s5k5e8.bin
 vendor/lib/camera/com.qti.tuned.sunny_s5k5e9yu05.bin
 vendor/lib/camera/com.qti.tuned.truly_ov8856.bin
@@ -213,6 +213,7 @@ vendor/lib/camera/components/com.qti.stats.afd.so
 vendor/lib/camera/components/com.qti.stats.asd.so
 vendor/lib/camera/components/com.qti.stats.awb.so
 vendor/lib/camera/components/com.qti.stats.haf.so
+vendor/lib/camera/components/com.qti.stats.localhistogram.so
 vendor/lib/camera/components/com.qti.stats.pdlib.so
 vendor/lib/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
@@ -228,7 +229,6 @@ vendor/lib/libcamxfdengine.so
 vendor/lib/libcamxstatscore.so
 vendor/lib/libcamxswprocessalgo.so
 vendor/lib/libcamxtintlessalgo.so
-vendor/lib/libmialgo_fs.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libsns_device_mode_stub.so
@@ -289,6 +289,7 @@ vendor/lib64/camera/com.qti.sensormodule.ofilm_ov13855.bin
 vendor/lib64/camera/com.qti.sensormodule.ofilm_ov13880.bin
 vendor/lib64/camera/com.qti.sensormodule.ofilm_s5k5e8.bin
 vendor/lib64/camera/com.qti.sensormodule.pmd_irs1645.bin
+vendor/lib64/camera/com.qti.sensormodule.pmd_irs2381c.bin
 vendor/lib64/camera/com.qti.sensormodule.semco_imx258.bin
 vendor/lib64/camera/com.qti.sensormodule.semco_imx386.bin
 vendor/lib64/camera/com.qti.sensormodule.semco_imx586.bin
@@ -300,7 +301,6 @@ vendor/lib64/camera/com.qti.sensormodule.sunny_imx586.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_ov13855.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_ov2281.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_s5k2l7.bin
-vendor/lib64/camera/com.qti.sensormodule.sunny_s5k2x5sp.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_s5k5e8.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_s5k5e9yu05.bin
 vendor/lib64/camera/com.qti.sensormodule.truly_imx476.bin
@@ -328,18 +328,18 @@ vendor/lib64/camera/com.qti.tuned.semco_imx258_mono.bin
 vendor/lib64/camera/com.qti.tuned.semco_imx386.bin
 vendor/lib64/camera/com.qti.tuned.semco_imx481.bin
 vendor/lib64/camera/com.qti.tuned.semco_imx586.bin
+vendor/lib64/camera/com.qti.tuned.semco_s5k3m5.bin
 vendor/lib64/camera/com.qti.tuned.semco_s5k5e8.bin
+vendor/lib64/camera/com.qti.tuned.sony_imx334.bin
 vendor/lib64/camera/com.qti.tuned.sunny_imx519.bin
 vendor/lib64/camera/com.qti.tuned.sunny_imx586.bin
 vendor/lib64/camera/com.qti.tuned.sunny_imx586_cn.bin
 vendor/lib64/camera/com.qti.tuned.sunny_ov13855.bin
 vendor/lib64/camera/com.qti.tuned.sunny_ov13855_cn.bin
 vendor/lib64/camera/com.qti.tuned.sunny_s5k2l7.bin
-vendor/lib64/camera/com.qti.tuned.sunny_s5k2x5sp.bin
 vendor/lib64/camera/com.qti.tuned.sunny_s5k5e8.bin
 vendor/lib64/camera/com.qti.tuned.sunny_s5k5e9yu05.bin
 vendor/lib64/camera/com.qti.tuned.truly_ov8856.bin
-vendor/lib64/camera/components/GpuKernelRepo.pb
 vendor/lib64/camera/components/com.arcsoft.node.capturebokeh.so
 vendor/lib64/camera/components/com.arcsoft.node.hdr.so
 vendor/lib64/camera/components/com.arcsoft.node.hdrchecker.so
@@ -369,11 +369,13 @@ vendor/lib64/camera/components/com.qti.node.xiaomigenderage.so
 vendor/lib64/camera/components/com.qti.stats.aec.so
 vendor/lib64/camera/components/com.qti.stats.af.so
 vendor/lib64/camera/components/com.qti.stats.afd.so
+vendor/lib64/camera/components/com.qti.stats.afwrapper.so
 vendor/lib64/camera/components/com.qti.stats.asd.so
 vendor/lib64/camera/components/com.qti.stats.awb.so
 vendor/lib64/camera/components/com.qti.stats.awbwrapper.so
 vendor/lib64/camera/components/com.qti.stats.haf.so
 vendor/lib64/camera/components/com.qti.stats.hafoverride.so
+vendor/lib64/camera/components/com.qti.stats.localhistogram.so
 vendor/lib64/camera/components/com.qti.stats.pdlib.so
 vendor/lib64/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
@@ -384,6 +386,8 @@ vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
 vendor/lib64/camera/components/com.vidhance.node.eis.so
 vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so
 vendor/lib64/camera/components/com.xiaomi.node.mibokeh.so
+vendor/lib64/camera/components/com.xiaomi.node.misegment.so
+vendor/lib64/camera/components/GpuKernelRepo.pb
 vendor/lib64/camera/components/libdepthmapwrapper.so
 vendor/lib64/camera/components/libmmcamera_cac3.so
 vendor/lib64/camera/components/model_back.dlc
@@ -396,7 +400,6 @@ vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/hw/com.qti.chi.override_moorea.so
 vendor/lib64/libFaceGrade.so
-vendor/lib64/libMegviiFacepp-0.5.2.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libVDSuperPhotoAPI.so
 vendor/lib64/libXMFD_AgeGender.so
@@ -418,7 +421,6 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libmegface.so
-vendor/lib64/libmialgo_fs.so
 vendor/lib64/libmibokeh_660.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
