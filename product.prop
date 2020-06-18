@@ -14,6 +14,8 @@ persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 
 # Camera
+camera.disable_zsl_mode=1
+persist.camera.gyro.disable=0
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
 # LMKD
