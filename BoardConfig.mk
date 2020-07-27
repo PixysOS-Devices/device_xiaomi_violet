@@ -15,6 +15,8 @@ DEVICE_PATH := device/xiaomi/violet
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := violet
 
