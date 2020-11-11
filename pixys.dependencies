@@ -3,7 +3,7 @@
     "remote": "lineage",
     "repository": "android_hardware_xiaomi",
     "target_path": "hardware/xiaomi",
-    "branch": "lineage-17.1"
+    "branch": "lineage-18.0"
   },
   {
     "remote": "pixys-devices",
@@ -12,9 +12,15 @@
     "branch": "ten"
   },
   {
-    "remote": "pixys-vendor",
+    "remote": "pixys-devices-gitlab",
     "repository": "vendor_xiaomi_violet",
     "target_path": "vendor/xiaomi",
-    "branch": "ten"
+    "branch": "eleven"
+  },
+  {
+    "remote": "lineage",
+    "repository": "android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch": "lineage-18.0"
   }
 ]
