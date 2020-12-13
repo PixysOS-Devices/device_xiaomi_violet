@@ -779,8 +779,8 @@ vendor/lib64/vendor.display.postproc@1.0.so|0b578a42706c770c6c61eccdee8a9e4c89c0
 vendor/bin/hw/vendor.display.color@1.0-service|8646c74c5b19e6d5086d7a4f83e0757610d18f3f
 # Qualcomm removed android.hidl.base@1.0 dependency on this one
 
-# Power-off charging daemon - from davinci-user 10 QKQ1.190825.002 20.7.1 release-keys
-bin/charger:bin/chargeonlymode|db38c9aacc49610c882ad038f5779c3364e1c341
+# Power-off charging daemon - from tucana-user 11 RKQ1.200826.002 20.10.15 release-keys
+bin/charger:bin/chargeonlymode|b20e9219feb42cbd49523247a0fcfad918a8ba1e
 
 # Qualcomm MSM Interface - from LA.UM.9.1.r1-06700-SMxxx0.0
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
