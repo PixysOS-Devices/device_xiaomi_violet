@@ -535,4 +535,7 @@
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
         <item>com.blaze.keyhandler.KeyHandler</item>
     </string-array>
+
+    <!-- Display low battery warning when battery level dips to this value -->
+    <integer name="config_lowBatteryWarningLevel">15</integer>
 </resources>
