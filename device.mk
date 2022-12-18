@@ -18,7 +18,7 @@ $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pe
+    $(LOCAL_PATH)/overlay-evolution
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -136,7 +136,8 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libgui_vendor \
     libxml2 \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    vendor.qti.hardware.camera.device@1.0.vendor \
+    Aperture
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++.so
@@ -220,9 +221,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/gps/etc/,$(TARGET_COPY_OUT_VENDOR)/etc)
-
-# Google Recorder
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Health
 PRODUCT_PACKAGES += \
@@ -466,6 +464,3 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libqdMetaData.vendor
-
-# Wallpapers
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
