@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_violet.mk
+    $(LOCAL_DIR)/blaze_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_violet-user \
-    evolution_violet-userdebug \
-    evolution_violet-eng
+    blaze_violet-user \
+    blaze_violet-userdebug \
+    blaze_violet-eng
