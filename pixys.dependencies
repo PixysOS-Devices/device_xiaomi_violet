@@ -1,0 +1,25 @@
+[
+    {
+        "remote": "github",
+        "repository": "NRanjan-17/vendor_xiaomi_violet",
+        "target_path": "vendor/xiaomi/violet",
+        "branch": "thirteen"
+    },
+    {
+        "repository": "kernel_xiaomi_violet",
+        "target_path": "kernel/xiaomi/violet",
+        "branch": "thirteen"
+    },
+    {
+        "remote": "gitlab",
+        "repository": "NRanjan-17/vendor_xiaomi-firmware",
+        "target_path": "vendor/xiaomi-firmware",
+        "branch": "thirteen"
+    },
+    {
+        "repository": "NRanjan-17/android_vendor_MiuiCamera",
+        "target_path": "vendor/MiuiCamera",
+        "branch": "thirteen",
+        "remote": "gitlab"
+    }
+]

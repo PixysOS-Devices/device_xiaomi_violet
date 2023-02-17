@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blaze_violet.mk
+    $(LOCAL_DIR)/pixys_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_violet-user \
-    blaze_violet-userdebug \
-    blaze_violet-eng
+    pixys_violet-user \
+    pixys_violet-userdebug \
+    pixys_violet-eng
